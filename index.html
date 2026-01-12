@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chiki Trendz Classic Fashion</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header{
+    background:#111;
+    color:#fff;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:10;
+}
+
+header nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+header nav a:hover{
+    color:#ff4081;
+}
+
+.logo{
+    font-size:22px;
+}
+
+/* Hero */
+.hero{
+    height:90vh; /* full view height */
+    display:flex;
+    align-items:center;
+    padding-left:50px;
+    background-size:cover;
+    background-position:center;
+    transition: background-image 1s ease-in-out;
+    margin-top:60px; /* header offset */
+}
+
+.hero-text{
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:30px;
+    border-radius:10px;
+    z-index:1;
+    position:relative;
+}
+
+.hero-text h1{
+    font-size:36px;
+}
+
+.hero-text a.button{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    text-decoration:none;
+    background:#ff4081;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* Products */
+.products{
+    padding:80px 40px 40px 40px;
+    text-align:center;
+}
+
+.products h2{
+    margin-bottom:30px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.product-card{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.product-card h3{
+    margin:10px 0;
+}
+
+.product-card a.button{
+    display:inline-block;
+    padding:8px 15px;
+    border:none;
+    background:black;
+    color:white;
+    cursor:pointer;
+    border-radius:4px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Contact */
+.contact{
+    padding:80px 40px;
+    background:#f0f0f0;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin-bottom:10px;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Chiki Trendz</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Welcome to Our Chiki Trendz Classic Fashion</h1>
+        <p>Discover our latest collection!</p>
+        <a href="#shop" class="button">Shop Now</a>
+    </div>
+</section>
+
+<section class="products" id="shop">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="../images/nguo1.jpg">
+            <h3>Dress 1</h3>
+            <p>TZ 15000</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/nguo2.jpg">
+            <h3>Dress 2</h3>
+            <p>TZ 16000</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/nguo3.jpg">
+            <h3>Dress 3</h3>
+            <p>TZ 15000</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/nguo4.jpg">
+            <h3>Dress 4</h3>
+            <p>TZ 18000</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/nguo5.jpg">
+            <h3>Dress 5</h3>
+            <p>TZ 15000</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/nguo6.jpg">
+            <h3>Dress 6</h3>
+            <p>TZ 15000</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/nguo7.jpg">
+            <h3>Dress 7</h3>
+            <p>TZ 15000</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/nguo8.jpg">
+            <h3>Dress 8</h3>
+            <p>TZ 14000</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/nguo9.jpg">
+            <h3>Dress 9</h3>
+            <p>TZ 15000</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/nguo10.jpg">
+            <h3>Dress 10</h3>
+            <p>TZ 15000</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@chikitrendz.com</p>
+    <p>Phone: +255 7XXXXXXXXX</p>
+    <p>Address: Dar es Salaam, Tanzania</p>
+</section>
+
+<footer>
+    © 2026 Chiki Trendz Classic Fashion. All rights reserved.
+</footer>
+
+<script>
+// Hero background slideshow
+const hero = document.querySelector('.hero');
+const images = [
+    '../images/nguo11.png',
+    '../images/nguo1.jpg',
+    '../images/nguo12.png',
+    '../images/nguo3.jpg',
+    '../images/nguo4.jpg'
+];
+
+let i = 0;
+setInterval(() => {
+    i = (i + 1) % images.length;
+    hero.style.backgroundImage = `url('${images[i]}')`;
+}, 2000); 
+</script>
+
+</body>
+</html>
